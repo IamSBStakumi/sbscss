@@ -1,0 +1,23 @@
+{
+  "name": "sbscss",
+  "version": "0.1.0",
+  "main": "dist/sbs.css",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "css",
+    "framework",
+    "ui"
+  ],
+  "author": "SBS_takumi",
+  "license": "MIT",
+  "scripts": {
+    "build": "sass src/index.scss dist/sbs.css && postcss dist/sbs.css -o dist/sbs.min.css",
+    "dev": "sass --watch src/index.scss dist/sbs.css"
+  },
+  "devDependencies": {
+    "postcss": "^8.5.6",
+    "sass": "^1.93.2"
+  }
+}
