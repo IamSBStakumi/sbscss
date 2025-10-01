@@ -13,10 +13,12 @@
   "author": "SBS_takumi",
   "license": "MIT",
   "scripts": {
-    "build": "sass src/index.scss dist/sbs.css && postcss dist/sbs.css -o dist/sbs.min.css",
+    "build": "sass src/index.scss dist/sbs.css",
     "dev": "sass --watch src/index.scss dist/sbs.css"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.1.1",
     "postcss": "^8.5.6",
     "sass": "^1.93.2"
   }
