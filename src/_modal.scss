@@ -43,4 +43,47 @@
     font-size: 1.5rem;
     cursor: pointer;
   }
+
+  .icon-error {
+    display: inline-block;
+    color: var(--color-danger);
+    vertical-align: middle;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    position: relative;
+    box-sizing: content-box;
+  }
+
+  .icon-error > span {
+    width: 0.2em;
+    height: 0.6em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .icon-error > span::before,
+  .icon-error > span::after {
+    content: "";
+    display: block;
+    width: inherit;
+    background-color: currentColor;
+  }
+
+  .icon-error > span::before {
+    margin-bottom: 0.1em;
+    height: 0.35em;
+    border-radius: 0.025em;
+  }
+
+  .icon-error > span::after {
+    height: 0.15em;
+    border-radius: 50%;
+  }
 }

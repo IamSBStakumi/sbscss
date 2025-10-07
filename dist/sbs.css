@@ -94,5 +94,43 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
+.modal .icon-error {
+  display: inline-block;
+  color: var(--color-danger);
+  vertical-align: middle;
+  line-height: 1;
+  width: 1em;
+  height: 1em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: content-box;
+}
+.modal .icon-error > span {
+  width: 0.2em;
+  height: 0.6em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.modal .icon-error > span::before,
+.modal .icon-error > span::after {
+  content: "";
+  display: block;
+  width: inherit;
+  background-color: currentColor;
+}
+.modal .icon-error > span::before {
+  margin-bottom: 0.1em;
+  height: 0.35em;
+  border-radius: 0.025em;
+}
+.modal .icon-error > span::after {
+  height: 0.15em;
+  border-radius: 50%;
+}
 
 /*# sourceMappingURL=sbs.css.map */
